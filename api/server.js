@@ -4,7 +4,7 @@ const cors = require('CORS')
 const server = express()
 
 // import routers
-const taskRouter = require('./tasks/task-router')
+const taskRouter = require('./data/routers/tasks-router')
 
 server.use(express.json())
 server.use(cors())
@@ -16,6 +16,6 @@ server.use((err, req, res, next) => {
 })
 
 // init routers
-server.use('/tasks', taskRouter)
+server.use('/', taskRouter)
 
 module.exports = server
