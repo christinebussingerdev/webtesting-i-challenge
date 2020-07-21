@@ -7,11 +7,11 @@ module.exports = {
 }
 
 function find() {
-  return db('users')
+  return db('tasks')
 }
 
 function add(newTask) {
-  return db('users')
+  return db('tasks')
   .insert(newTask)
 }
 
