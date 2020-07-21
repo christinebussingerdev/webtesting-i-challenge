@@ -5,7 +5,18 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './dev.sqlite3'
+      filename: './tasks.db'
+    },
+    migrations: {
+      directory: './api/data/migrations'
+    },
+    seeds: {
+      directory: './api/data/seeds'
+    },
+    pool: {
+      afterCreate: (conn, done) => {
+        conn.run("PRAGMA foreign_keys = ON", done)
+      },
     }
   },
 
@@ -29,8 +40,8 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
-      password: 'password'
+      user:     'cake',
+      password: 'cakery'
     },
     pool: {
       min: 2,
