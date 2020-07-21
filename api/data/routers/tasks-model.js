@@ -17,6 +17,6 @@ function add(newTask) {
 
 function remove(id) {
   return db('tasks')
-  .where(id)
+  .where('id', id)
   .del()
 }
