@@ -29,3 +29,5 @@ tasks.delete('/api/tasks/:id', async(req, res, next) => {
   }
   catch(err) {next(err)}
 })
+
+module.exports = tasks
