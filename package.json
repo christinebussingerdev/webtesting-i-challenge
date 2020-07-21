@@ -1,0 +1,29 @@
+{
+  "name": "webtesting-i-challenge",
+  "version": "1.0.0",
+  "description": "In this project, you will demonstrate proficiency by writing unit tests and production code to satisfy the _Minimum Viable Product_ described below.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christinebussingerdev/webtesting-i-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christinebussingerdev/webtesting-i-challenge/issues"
+  },
+  "homepage": "https://github.com/christinebussingerdev/webtesting-i-challenge#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^26.1.0",
+    "knex": "^0.21.2",
+    "nodemon": "^2.0.4",
+    "sqlite3": "^5.0.0",
+    "supertest": "^4.0.2"
+  }
+}
